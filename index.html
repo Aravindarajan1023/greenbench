@@ -571,13 +571,14 @@
             data-wow-offset="50"
             data-wow-delay="0.9s"
           >
-            <form action="#" method="post">
+            <form action="#" method="post" netlify>
               <label>NAME</label>
               <input
                 name="fullname"
                 type="text"
                 class="form-control"
                 id="fullname"
+                     required
               />
 
               <label>EMAIL</label>
@@ -585,7 +586,7 @@
                 name="email"
                 type="email"
                 class="form-control"
-                id="email"
+                id="email" required
               />
 
               <label>MESSAGE</label>
@@ -593,7 +594,7 @@
                 name="message"
                 rows="4"
                 class="form-control"
-                id="message"
+                id="message" required
               ></textarea>
 
               <input type="submit" class="form-control" />
